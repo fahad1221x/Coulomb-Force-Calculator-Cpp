@@ -1,0 +1,9 @@
+#ifndef FUN_H
+#define FUN_H
+
+
+void getInputs(double pos1[], double pos2[], double &q1, double &q2);
+
+void calculateAndSave(double pos1[], double pos2[], double q1, double q2);
+
+#endif

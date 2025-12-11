@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cmath>
+#include <fstream>
+#include "fun.h"
+
+using namespace std;
+
+void getInputs(double pos1[], double pos2[], double &q1, double &q2) {
+    cout << "Enter Charge 1 (value): ";
+    cin >> q1;
+    cout << "Enter Position 1 (x y z): ";
+    cin >> pos1[0] >> pos1[1] >> pos1[2];
+
+    cout << "Enter Charge 2 (value): ";
+    cin >> q2;
+    cout << "Enter Position 2 (x y z): ";
+    cin >> pos2[0] >> pos2[1] >> pos2[2];
+}
+
+void calculateAndSave(double pos1[], double pos2[], double q1, double q2) {
+    double dx = pos2[0] - pos1[0];
+    double dy = pos2[1] - pos1[1];
+    double dz = pos2[2] - pos1[2];
+    double dist = sqrt(pow(dx, 2) + pow(dy, 2) + pow(dz, 2));
+
+    double k = 9e9;
+    double force = (k * abs(q1 * q2)) / (dist * dist);
+
+    cout << "\nResults:\n";
+    cout << "Distance = " << dist << " m\n";
+    cout << "Force = " << force << " N\n";
+
+    ofstream myfile("report.txt", ios::app);
+    if (myfile.is_open()) {
+        myfile << "Dist: " << dist << " m, Force: " << force << " N\n";
+        myfile.close();
+    }
+}
