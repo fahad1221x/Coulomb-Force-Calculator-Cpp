@@ -3,20 +3,20 @@
 A C++ application that calculates the electrostatic force between two point charges in 3D space using Coulomb's Law. This tool was developed to assist with Electromagnetics coursework at King Saud University.
 
 
-## 🚀 Features
+##  Features
 * **3D Vector Analysis:** Calculates Euclidean distance between charges in (x, y, z) coordinate space.
 * **Modular Design:** Uses separate header (`fun.h`) and source (`fun.cpp`) files for clean code organization.
 * **File I/O:** Automatically saves calculation results to a `report.txt` file for data logging.
 * **Interactive Loop:** Allows multiple calculations in a single session.
 
-## 📐 The Physics
+##  The Physics
 The program implements Coulomb's Law:
 $$F = k \frac{q_1 q_2}{r^2}$$
 Where:
 * $k \approx 9 \times 10^9$
 * $r$ is the calculated Euclidean distance: $\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$
 
-## 🧾 Test Cases
+##  Test Cases
 We verified the code against manual calculations:
 
 | Case | Charge 1 | Charge 2 | Distance | Expected Force | Program Output |
