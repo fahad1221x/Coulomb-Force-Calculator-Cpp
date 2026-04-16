@@ -24,7 +24,7 @@ We verified the code against manual calculations:
 | **1** | 1 C | 1 C | 1 m | 9.00e+09 N | [PASS] 9e+09 N |
 | **2** | 1 C | 1 C | 2 m | 2.25e+09 N | [PASS] 2.25e09 N |
 
-## 🛠 How to Run
+## How to Run
 1.  Clone the repository.
 2.  Compile using g++:
     ```bash
