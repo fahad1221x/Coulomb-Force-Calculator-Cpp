@@ -1,4 +1,4 @@
-# Coulomb's Law Force Calculator (3D) 
+# Electrostatic Force Analysis Tool in C++ (3D)
 
 A C++ application that calculates the electrostatic force between two point charges in 3D space using Coulomb's Law. This tool was developed to assist with Electromagnetics coursework at King Saud University.
 
